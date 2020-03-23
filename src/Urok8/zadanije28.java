@@ -15,11 +15,11 @@ public class zadanije28 {
         }
         System.out.println(numbers);
         ListIterator<Integer> iterator = numbers.listIterator();
-        int max = numbers.get(0);
+        int max = 0;
         while (iterator.hasNext()) {
             int item = iterator.next();
-            if (numbers.get(item)>max) {
-                max = numbers.get(item);
+            if (item>max) {
+                max = item;
             }
         }
         System.out.println(max);
